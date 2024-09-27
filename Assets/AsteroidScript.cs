@@ -9,6 +9,8 @@ public class AsteroidScript : MonoBehaviour
     [SerializeField] int HP = 1;
     [SerializeField] int ScoreVal = 10;
 
+    [SerializeField] bool DestroyBulletOnhit;
+
     private void Start()
     {
         InvokeRepeating("CheckHeight", 15, 5);
@@ -28,6 +30,11 @@ public class AsteroidScript : MonoBehaviour
                 HP--;
                 GameObject Part = Instantiate(Damage);
                 Part.transform.position = transform.position;
+            }
+
+            if (DestroyBulletOnhit)
+            {
+                Destroy(other.gameObject);
             }
         }
     }

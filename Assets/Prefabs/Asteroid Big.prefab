@@ -100,6 +100,8 @@ MonoBehaviour:
   Explode: {fileID: 7524221335025245960, guid: f6a8355afb35c8f4687bcdf8c69c70fa, type: 3}
   Damage: {fileID: 1841450311067488818, guid: fbbfb26b28b03ec47af345d4ead3aa7b, type: 3}
   HP: 2
+  ScoreVal: 10
+  DestroyBulletOnhit: 1
 --- !u!1001 &2760312823025230891
 PrefabInstance:
   m_ObjectHideFlags: 0
